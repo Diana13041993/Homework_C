@@ -12,9 +12,11 @@ num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число 2: ");
 num2 = Convert.ToInt32(Console.ReadLine());
 
+// Условие, при котором должно выполняться сравнение чисел
 {
 if (num1 > num2) 
 {
+// Присваиваем числа мин и макс
     max = num1;
     min = num2;
 }
@@ -23,11 +25,13 @@ else if(num1 < num2)
     max = num2;
     min = num1;
 }
+// если задать одинаковые числа, то первому числу присвоится мин, второму макс
     else
 {
     min = num1;
     max = num2;
 }
+// Выводим мин и макс на консоль
 
     Console.WriteLine("max = ");
     Console.WriteLine(max);
@@ -35,12 +39,6 @@ else if(num1 < num2)
     Console.WriteLine(min);
 
 }
-
-
-
-
-
-
 
 
 
