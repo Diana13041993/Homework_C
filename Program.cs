@@ -1,106 +1,77 @@
-﻿// Напишите программу, которая принимает на вход трёхзначное число и на выходе
-// показывает вторую цифру этого числа
+﻿
+/*/ // Напишите программу, которая принимает на вход пятизначное число 
+// и проверяет, является ли оно палиндромом.
+
+// void Polli (string num)
+//  {
+//  if (num [0] == num [4] && num [1] == num [3])
+//  {
+//     Console.WriteLine ("Полиндром");
+// }
+// else {
+//     Console.WriteLine ("Не полиндром или вне границ");
+//     }
+//  }
+// Console.WriteLine("Введите пятизначное число");
+// string num1 = Console.ReadLine();
+
+// Polli(num1);
+
+
+//Напишите программу, которая принимает на вход число N и выдает таблицу
+// кубов чисел от 1 до N
+
+/* void Cub(int n) 
+ { 
+ int curr = 1; 
+ //цикл продолжается до тех пор, пока текущ значение будет меньше или равно N
+ while(curr<=n) 
+     { 
+        считаем и выводим куб числа
+     Console.Write (curr*curr*curr + ", "); 
+     curr++; 
+     } 
+     
+ } 
+ // вводим число
+ Console.Write("Введите число: "); 
+ int num = Convert.ToInt32(Console.ReadLine()); 
+ if(num <= 0) Console.Write("Некорректный ввод"); 
+ 
+ else Cub(num); */
+
+
+// Напишите программу, которая принимает на вход координаты двух точек
+и находит расстояние между ними в 3D пространстве
+
+
+void dot(int x1, int y1, int z1, int x2, int y2, int z2)
+{
+    
+    double xd = 0;
+    double yd = 0;
+    double zd = 0;
+    // формула для нахождения расстояния между точек:
+    xd= ((x2-x1) * (x2-x1)); 
+    yd= ((y2-y1) * (y2-y1)); 
+    zd= ((z2-z1) * (z2-z1));
+    Console.WriteLine(Math.Sqrt((xd+yd+zd))) ;
+}
+//вводим точки координат
+Console.Write("Введите х1: ");
+int x1 =Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите y1: ");
+int y1 =Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите z1: ");
+int z1 =Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите х2: ");
+int x2 =Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите y2: ");
+int y2 =Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите z2: ");
+int z2 =Convert.ToInt32(Console.ReadLine());
+
+// получаем ответ 
+dot(x1, y1, z1, x2, y2, z2);
+
 /*
-int SecondNumber()
-{
-int num;
-Console.WriteLine ("Введите трехзначное число: ");
-num = Convert.ToInt32(Console.ReadLine());
-// Условие при котором считвается только трехзначное число
-if(num>=100 && num<=999)
-{
-    Console.WriteLine("Number is - " + num);
-    //делим на 10 и ищем остаток для нахождения 2 числа
-        int dec = num / 10;
-        int ed = dec % 10;
-        int result = ed;
-        return result;
-}
-// если условие не выполняется, то получаем 0
-else 
-{
-    Console.WriteLine("Вы ввели неверное число!");
-    int n = 0;
-    return n;
-
-если использовать void, то не нужно возвращать 0
-}   
-}
-
-    int number = SecondNumber();
-     Console.WriteLine("Ответ - " + number);
-
-
-Второй вариант
-
-void SecondNumber()
-{
-int num;
-Console.WriteLine ("Введите трехзначное число: ");
-num = Convert.ToInt32(Console.ReadLine());
-// Условие при котором считвается только трехзначное число
-if(num>=100 && num<=999)
-{
-    Console.WriteLine("Number is - " + num);
-    //делим на 10 и ищем остаток для нахождения 2 числа
-        int dec = num / 10;
-        int ed = dec % 10;
-        int result = ed;
-        Console.WriteLine("Ответ - " + result);
-}
-// если условие не выполняется
-else 
-{
-    Console.WriteLine("Вы ввели неверное число!");
-
-
-// Напишите программу, которая выводит третью цифру заданного числа или 
-// или сообщает, что третьей цифры нет
-
-
-void Third(int num)
-
-
-//Напишите программу, которая принимает на вход цифру, обозначающую день
-//недели, и проверяет, является ли этот день выходным
-
-void Nday (int num)
-{ 
-    // условие выходных дней
-  if (num == 7 || num == 6) 
-  { Console.WriteLine ("Ееее, выходной "); } 
-    // условие исключений
-  else if ( num == 0 || num > 7)
-  { Console.WriteLine ("Ты с какой планеты?");
-  }
-    // все остальное рабочие дни
-  else { 
-    Console.WriteLine("О нет, опять работа"); 
-  } 
-} 
-Console.WriteLine("Введи день недели: "); 
-int num = Convert.ToInt32(Console.ReadLine()); 
-Nday(num);
-{
-    // Условие, при котором заданное число будет меньше или равно 100
-    if(num>=100)
-{
-    // Зацикливаем до тех пор, пока число не будет трехзначным
-    while(num>1000)
-    {
-    num = num / 10;
-    }
-    int thr = num % 10;
-    Console.WriteLine("Третья цифра:  " + thr);
-}
-else{
-    // если число двухзначное или меньше, то:
-    Console.WriteLine("Третьей цифры нет");
-}
-}
-Console.WriteLine("Введите число:  ");
-int num = Convert.ToInt32(Console.ReadLine());
-Third(num);
-*/
-
-
